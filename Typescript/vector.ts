@@ -48,4 +48,12 @@ export class Vector{
         }
         return temporal;
     }
+
+    public getElements(): number[] {
+        return this.elements;
+    }
+
+    public setElements(elements:number[]): void {
+        this.elements = elements;
+    }
 }
