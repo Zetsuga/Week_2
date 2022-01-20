@@ -10,9 +10,18 @@ export class MobileLibrary{
         this.name = name;
         this.location = location;
         this.mobiles = mobiles;
+        this.totalPrice = this.totalPriceCalculation();
     }
 
-    public totalPriceCalculation():number{
+    public printLibrary(){
+        console.log(`This is all my mobiles: \n`);
+        for(let movil in this.mobiles){
+            this.mobiles[movil].printBonito();
+        }
+        console.log(`Price overall: ${this.totalPrice}\n`);
+    }
+
+    private totalPriceCalculation():number{
         let suma:number = 0;
         for(let movil in this.mobiles){
             suma += this.mobiles[movil].getPrice();

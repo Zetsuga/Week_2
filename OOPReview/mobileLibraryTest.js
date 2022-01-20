@@ -8,4 +8,11 @@ var samsung = new mobile_1.Mobile("Samsung Galaxy 10", "Galaxy 10", "Samsung", 1
 var xiaomi = new mobile_1.Mobile("Xiamomi NF 3", "NF 3", "Xiaomi", 5048, "blanco", true, 5, 580);
 var arrayMobile = [nokia, iphone, samsung, xiaomi];
 var libreria = new mobileLibrary_1.MobileLibrary("Mis teléfonos", "Mi cajón", arrayMobile);
-console.log(libreria.totalPriceCalculation());
+//console.log(libreria.totalPriceCalculation());
+libreria.printLibrary();
+var ztc = new mobile_1.Mobile("ZTC Shur primo", "3Shur primo", "ZTC", 512, "verde", false, 1, 30);
+var ericson = new mobile_1.Mobile("Ericsson Z4", "Z4", "Ericsson", 23, "Transparente", false, 1, 5);
+var samsung2 = new mobile_1.Mobile("Samsung Galaxy S 20", "Galaxy S 20", "Samsung", 10048, "Azul", true, 5, 945);
+var arrayMobile2 = [ztc, ericson, samsung2];
+var libreria2 = new mobileLibrary_1.MobileLibrary("Teléfonos de mi hermano", "Su cajón", arrayMobile2);
+libreria2.printLibrary();

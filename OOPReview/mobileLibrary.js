@@ -6,7 +6,15 @@ var MobileLibrary = /** @class */ (function () {
         this.name = name;
         this.location = location;
         this.mobiles = mobiles;
+        this.totalPrice = this.totalPriceCalculation();
     }
+    MobileLibrary.prototype.printLibrary = function () {
+        console.log("This is all my mobiles: \n");
+        for (var movil in this.mobiles) {
+            this.mobiles[movil].printBonito();
+        }
+        console.log("Price overall: ".concat(this.totalPrice, "\n"));
+    };
     MobileLibrary.prototype.totalPriceCalculation = function () {
         var suma = 0;
         for (var movil in this.mobiles) {

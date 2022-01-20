@@ -9,4 +9,14 @@ let xiaomi:Mobile = new Mobile("Xiamomi NF 3","NF 3","Xiaomi",5048,"blanco",true
 let arrayMobile:Mobile[] = [nokia,iphone,samsung,xiaomi];
 let libreria:MobileLibrary = new MobileLibrary("Mis teléfonos","Mi cajón",arrayMobile);
 
-console.log(libreria.totalPriceCalculation());
+//console.log(libreria.totalPriceCalculation());
+libreria.printLibrary();
+
+let ztc:Mobile = new Mobile("ZTC Shur primo","3Shur primo","ZTC",512,"verde",false,1,30);
+let ericson:Mobile = new Mobile("Ericsson Z4","Z4","Ericsson",23,"Transparente",false,1,5);
+let samsung2:Mobile = new Mobile("Samsung Galaxy S 20","Galaxy S 20","Samsung",10048,"Azul",true,5,945);
+
+let arrayMobile2:Mobile[] = [ztc,ericson,samsung2];
+let libreria2:MobileLibrary = new MobileLibrary("Teléfonos de mi hermano","Su cajón",arrayMobile2);
+
+libreria2.printLibrary();
